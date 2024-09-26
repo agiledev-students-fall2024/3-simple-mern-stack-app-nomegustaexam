@@ -50,8 +50,11 @@ const AboutUs = () => {
             <p><strong>{aboutData.name}</strong> </p>
             <div className="AboutUs-content">
                 <p>{aboutData.bio}</p>  
-            </div>  
-            <img src={aboutData.imageUrl} alt="About Us" />                         
+            </div>
+            <img src={aboutData.imageUrl} alt="About Us" />         
+            <div className="AboutUs-content">
+                <p>{aboutData.des}</p>  
+            </div>                
         </>
       )}
     </>

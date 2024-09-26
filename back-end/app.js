@@ -64,7 +64,8 @@ app.get('/about', async (req, res) => {
   const aboutData = {
       name: "Rena Wang",
       bio: "I'm a Senior at CAS, majoring in Computer Science, with a minor in Mathematics and Media, Culture, and Communication. I am intrested in security and cryptography. Currently, my research focuses on Quantum-resistant encryption. Beyond academics, I am the women's team captain of NYU table tennis club. I also enjoy traveling and exploring the city.",
-      imageUrl: "https://patchwiki.biligame.com/images/langrisser/thumb/9/96/rwdtb26k7nh4y9vb15n1o1kwsizbvfv.png/357px-%E7%AB%8B%E7%BB%98_%E7%A5%9E%E4%B9%90.png"
+      imageUrl: "https://patchwiki.biligame.com/images/langrisser/thumb/9/96/rwdtb26k7nh4y9vb15n1o1kwsizbvfv.png/357px-%E7%AB%8B%E7%BB%98_%E7%A5%9E%E4%B9%90.png",
+      des:"This is not a img of myself since I don't really want to put a pic of myself on the website. If that affects the grading please let me know."
   };
   return res.json(aboutData);
 });
