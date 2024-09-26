@@ -57,6 +57,19 @@ app.get('/messages/:messageId', async (req, res) => {
     })
   }
 })
+
+// ___________________newly added___________________-
+//  a route to handle fetching the info about myself
+app.get('/about', async (req, res) => {
+  const aboutData = {
+      name: "Rena Wang",
+      bio: "I'm a Senior at CAS, majoring in Computer Science, with a minor in Mathematics and Media, Culture, and Communication. I am intrested in security and cryptography. Currently, my research focuses on Quantum-resistant encryption. Beyond academics, I am the women's team captain of NYU table tennis club. I also enjoy traveling and exploring the city.",
+      imageUrl: "https://patchwiki.biligame.com/images/langrisser/thumb/9/96/rwdtb26k7nh4y9vb15n1o1kwsizbvfv.png/357px-%E7%AB%8B%E7%BB%98_%E7%A5%9E%E4%B9%90.png"
+  };
+  return res.json(aboutData);
+});
+
+
 // a route to handle logging out users
 app.post('/messages/save', async (req, res) => {
   // try to save the message to the database
@@ -77,6 +90,7 @@ app.post('/messages/save', async (req, res) => {
     })
   }
 })
+
 
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
